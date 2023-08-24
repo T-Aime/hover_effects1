@@ -1,0 +1,95 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  background: #222;
+}
+
+.wrapper .container {
+  padding-top: 10px;
+}
+
+.wrapper .container .hero-section {
+  width: 80%;
+  margin: 0px auto;
+  padding-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.wrapper .container .hero-section .gallery {
+  width: 100%;
+  position: relative;
+}
+
+.wrapper .container .hero-section .gallery .caption {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #eee;
+  color: #222;
+  opacity: 0;
+  -webkit-transition: opacity 0.30s;
+  transition: opacity 0.30s;
+}
+
+.wrapper .container .hero-section .gallery .caption:hover {
+  opacity: 0.7;
+}
+
+.wrapper .container .hero-section .gallery h2 {
+  margin-top: 5rem;
+}
+
+.wrapper .container .hero-section .gallery p {
+  font-size: 16px;
+  margin-top: 1rem;
+}
+
+.wrapper .container .hero-section .gallery .btn {
+  width: 6rem;
+  height: 2rem;
+  margin-left: 4rem;
+  font-size: 20px;
+  border-radius: 15px;
+  background: #db1679;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.wrapper .container .hero-section .gallery .image-section {
+  width: 100%;
+}
+
+.wrapper .container .hero-section .gallery .image-section img {
+  width: 100%;
+  height: 18rem;
+  border: 1px solid #f08dbf;
+  padding: 5px;
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
